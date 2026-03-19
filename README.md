@@ -24,7 +24,7 @@ It works similar to **autocomplete features** used in mobile keyboards and searc
 ├── lstm_model.h5        # Trained LSTM model
 ├── tokenizer.pkl        # Saved tokenizer
 ├── max_len.pkl          # Maximum sequence length
-├── app.py               # Streamlit UI
+├── main.py               # Streamlit UI
 ├── Word_prediction.ipynb # Model training notebook
 └── README.md            # Project documentation
 ```
@@ -104,7 +104,7 @@ This notebook includes:
 * **lstm_model.h5** → Trained deep learning model
 * **tokenizer.pkl** → Converts text to sequences
 * **max_len.pkl** → Stores max sequence length
-* **app.py** → Streamlit UI for prediction
+* **main.py** → Streamlit UI for prediction
 * **Word_prediction.ipynb** → Training notebook
 
 ---
