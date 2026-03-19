@@ -1,140 +1,244 @@
-**LSTM Project**
+<h1 align="center">🧠 LSTM Next Word Prediction System</h1>
 
-# 🧠 LSTM Next Word Prediction
+<h3 align="center">🚀 Deep Learning | NLP | Streamlit App</h3>
 
-This project is a **Deep Learning-based Next Word Prediction system** that uses an **LSTM (Long Short-Term Memory)** model to predict the next word in a sentence.
+<p align="center">
+A powerful <b>Next Word Prediction system</b> built using <b>LSTM (Long Short-Term Memory)</b> networks.
+</p>
 
-It works similar to **autocomplete features** used in mobile keyboards and search engines.
+<hr>
 
----
+<h2>🌟 Project Overview</h2>
 
-## 🚀 Features
+<p>
+This project uses <b>Natural Language Processing (NLP)</b> and <b>Deep Learning</b> 
+to predict the next word in a sentence.
+</p>
 
-* 🔤 Predicts the next word based on input text
-* 🧠 Built using LSTM (RNN-based architecture)
-* ⚡ Real-time predictions using Streamlit UI
-* 💾 Pre-trained model support
-* 📚 Easy to understand and beginner-friendly
+<ul>
+<li>Data preprocessing</li>
+<li>Tokenization</li>
+<li>Sequence generation</li>
+<li>LSTM model training</li>
+<li>Real-time prediction via Streamlit</li>
+</ul>
 
----
+<hr>
 
-## 📂 Project Structure
+<h2>🎯 Key Features</h2>
 
-```
-├── lstm_model.h5        # Trained LSTM model
-├── tokenizer.pkl        # Saved tokenizer
-├── max_len.pkl          # Maximum sequence length
-├── main.py               # Streamlit UI
-├── Word_prediction.ipynb # Model training notebook
-└── README.md            # Project documentation
-```
+<ul>
+<li>✨ Smart Text Prediction</li>
+<li>⚡ Real-Time UI (Streamlit)</li>
+<li>🧠 Deep Learning Powered (LSTM)</li>
+<li>📦 Pre-trained Model Support</li>
+<li>📊 Efficient Text Processing</li>
+<li>🔁 Scalable Architecture</li>
+</ul>
 
----
+<hr>
 
-## ⚙️ How It Works
+<h2>🖥️ System Architecture</h2>
 
-1. 📚 Text data is collected and cleaned
-2. 🔤 Tokenizer converts words into numbers
-3. 📏 Sequences are padded to equal length
-4. 🧠 LSTM model is trained on sequences
-5. 🎯 Model predicts the next word using probability
+<pre>
+User Input ➝ Tokenizer ➝ Sequence Padding ➝ LSTM Model ➝ Predicted Word
+</pre>
 
----
+<hr>
 
-## 🧪 Example
+<h2>📂 Project Structure</h2>
 
-**Input:**
+<pre>
+├── lstm_model.h5
+├── tokenizer.pkl
+├── max_len.pkl
+├── app.py
+├── Word_prediction.ipynb
+└── README.md
+</pre>
 
-```
-I love deep learning
-```
+<hr>
 
-**Output:**
+<h2>⚙️ How It Works</h2>
 
-```
-I love deep learning models
-```
+<h4>1️⃣ Data Preprocessing</h4>
+<ul>
+<li>Convert text to lowercase</li>
+<li>Remove unwanted characters</li>
+</ul>
 
----
+<h4>2️⃣ Tokenization</h4>
+<ul>
+<li>Words → Numerical sequences</li>
+</ul>
 
-## ▶️ Run the Project
+<h4>3️⃣ Sequence Generation</h4>
+<ul>
+<li>Create n-gram sequences</li>
+</ul>
 
-### 1️⃣ Install Dependencies
+<h4>4️⃣ Padding</h4>
+<ul>
+<li>Ensure equal input length</li>
+</ul>
 
-```bash
-pip install tensorflow streamlit numpy
-```
+<h4>5️⃣ Model Training</h4>
+<ul>
+<li>Train LSTM on sequences</li>
+</ul>
 
----
+<h4>6️⃣ Prediction</h4>
+<ul>
+<li>Predict next word using probabilities</li>
+</ul>
 
-### 2️⃣ Run Streamlit App
+<hr>
 
-```bash
-streamlit run app.py
-```
+<h2>🧪 Example</h2>
 
----
+<b>Input:</b>
+<pre>Machine learning is</pre>
 
-## 🧠 Model Details
+<b>Output:</b>
+<pre>Machine learning is amazing</pre>
 
-* Architecture: LSTM Neural Network
-* Framework: TensorFlow / Keras
-* Loss Function: Sparse Categorical Crossentropy
-* Optimizer: Adam
+<hr>
 
----
+<h2>📊 Model Architecture</h2>
 
-## 📓 Training
+<pre>
+Embedding Layer → LSTM Layer → Dense Layer (Softmax)
+</pre>
 
-You can train the model using:
+<ul>
+<li><b>Embedding Dimension:</b> 100</li>
+<li><b>LSTM Units:</b> 150</li>
+<li><b>Loss:</b> Sparse Categorical Crossentropy</li>
+<li><b>Optimizer:</b> Adam</li>
+</ul>
 
-👉 `Word_prediction.ipynb`
+<hr>
 
-This notebook includes:
+<h2>📈 Workflow</h2>
 
-* Data preprocessing
-* Tokenization
-* Sequence generation
-* Model training
+<pre>
+Text Data
+   ↓
+Tokenization
+   ↓
+Sequence Creation
+   ↓
+Padding
+   ↓
+LSTM Training
+   ↓
+Prediction Output
+</pre>
 
----
+<hr>
 
-## 📌 Files Explained
+<h2>▶️ Run the Project</h2>
 
-* **lstm_model.h5** → Trained deep learning model
-* **tokenizer.pkl** → Converts text to sequences
-* **max_len.pkl** → Stores max sequence length
-* **main.py** → Streamlit UI for prediction
-* **Word_prediction.ipynb** → Training notebook
+<h4>🔧 Install Dependencies</h4>
 
----
+<pre><code>pip install tensorflow streamlit numpy</code></pre>
 
-## 🔥 Future Improvements
+<h4>▶️ Start App</h4>
 
-* Add top-k predictions (multiple suggestions)
-* Improve dataset for better accuracy
-* Use Transformer models (GPT-like)
-* Deploy on cloud (Render / HuggingFace)
+<pre><code>streamlit run app.py</code></pre>
 
----
+<hr>
 
-## 🤝 Contributing
+<h2>📓 Training the Model</h2>
 
-Feel free to fork this repository and improve it!
+<p>Use <b>Word_prediction.ipynb</b> for:</p>
 
----
+<ul>
+<li>Data loading</li>
+<li>Preprocessing</li>
+<li>Model building</li>
+<li>Training & saving</li>
+</ul>
 
-## 📜 License
+<hr>
 
-This project is open-source and free to use.
+<h2>📌 File Descriptions</h2>
 
----
+<table border="1" cellpadding="8" cellspacing="0">
+<tr>
+<th>File</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>lstm_model.h5</td>
+<td>Trained deep learning model</td>
+</tr>
+<tr>
+<td>tokenizer.pkl</td>
+<td>Text → sequences</td>
+</tr>
+<tr>
+<td>max_len.pkl</td>
+<td>Sequence length</td>
+</tr>
+<tr>
+<td>app.py</td>
+<td>Streamlit UI</td>
+</tr>
+<tr>
+<td>Word_prediction.ipynb</td>
+<td>Training notebook</td>
+</tr>
+</table>
 
-## 👨‍💻 Author
+<hr>
 
-Shashank Singh
+<h2>🚀 Future Improvements</h2>
 
----
+<ul>
+<li>🔥 Top-K Predictions</li>
+<li>🤖 Transformer models (GPT / BERT)</li>
+<li>🎤 Voice input</li>
+<li>☁️ Cloud deployment</li>
+<li>📱 Mobile UI</li>
+</ul>
 
-⭐ If you like this project, don’t forget to star the repo!
+<hr>
 
+<h2>🧠 Learning Outcomes</h2>
+
+<ul>
+<li>NLP fundamentals</li>
+<li>Sequence modeling</li>
+<li>LSTM networks</li>
+<li>Streamlit deployment</li>
+</ul>
+
+<hr>
+
+<h2>👨‍💻 Author</h2>
+
+<p><b>Shashank Singh</b></p>
+
+<hr>
+
+<h2>⭐ Support</h2>
+
+<p>
+👉 Star ⭐ the repo <br>
+👉 Share with others
+</p>
+
+<hr>
+
+<h2>💡 Inspiration</h2>
+
+<ul>
+<li>Google Autocomplete</li>
+<li>Smartphone keyboards</li>
+<li>AI writing assistants</li>
+</ul>
+
+<hr>
+
+<p align="center"><b>🚀 Build. Learn. Improve. Repeat.</b></p>
