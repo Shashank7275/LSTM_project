@@ -1,5 +1,5 @@
 import streamlit as st
-import numpy as nppppp
+import numpy as npppp
 import pickle
 import tensorflow as tf
 from tensorflow.keras.models import load_model
